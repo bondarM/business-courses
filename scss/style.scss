@@ -823,6 +823,19 @@ label {
   }
 }
 
+@media screen and (max-width: 420px) {
+  .media__none5 {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .carousel-control-prev {
+    left: 209px !important;
+    top: 533px !important;
+  }
+}
+
 @media screen and (max-width: 380px) {
   .carousel-control-prev {
     left: 190px !important;
@@ -875,6 +888,13 @@ label {
 
   .main__block {
     margin-left: 52px;
+  }
+}
+
+@media screen and (max-width: 343px) {
+  .carousel-control-prev {
+    left: 169px !important;
+    top: 533px !important;
   }
 }
 
