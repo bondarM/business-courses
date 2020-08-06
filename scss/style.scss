@@ -1,0 +1,918 @@
+@font-face {
+  font-family: "GothamPro";
+  src: url("../font/GothamPro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../font/GothamPro-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GothamProLite";
+  src: url("../font/GothamPro-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: GothamProLite;
+  line-height: 28px;
+  letter-spacing: 1.05px;
+  background-color: #f9f9f9 !important;
+}
+
+strong {
+  color: #c0c0c0;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: GothamProBold;
+}
+
+p {
+  color: #767676;
+  font-family: GothamProLite;
+}
+
+// ------------------------------------------header------------------------------
+.header {
+  position: relative;
+}
+.header,
+.white__timetable,
+.formEducation,
+.teachers,
+.timetable,
+.contacts {
+  background-color: white;
+}
+.cube {
+  width: 450px;
+  height: 400px;
+  display: block;
+  background-color: #f9e847;
+}
+
+.start__date {
+  width: 157px;
+  height: 157px;
+  border: 8px solid #000000;
+  margin: auto;
+  margin-top: 100px;
+
+  p {
+    margin: 47px 13px;
+    font-size: 32px;
+    font-family: GothamProBold;
+    letter-spacing: 3.25px;
+    color: black;
+  }
+}
+.start__course {
+  font-size: 13px;
+  letter-spacing: 2.6px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 17px;
+  color: black;
+  font-family: GothamProBold;
+}
+
+.main__block {
+  margin: auto;
+  margin-left: 66px;
+  margin-top: 115px;
+  h2 {
+    width: 230px;
+  }
+  p {
+    width: 400px;
+  }
+}
+
+.main__ifo__block {
+  width: 320px;
+  margin-left: 66px;
+  margin-top: 115px;
+
+  img {
+    width: 63px;
+    height: 63px;
+    margin-right: 60px;
+  }
+  h2 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.training {
+  margin-bottom: 65px;
+  &__block {
+    font-size: 14px;
+  }
+}
+
+.menu {
+  position: absolute;
+  z-index: 11;
+  top: 36px;
+  right: 39px;
+  padding: 10px;
+  cursor: pointer;
+  &__cube {
+    background-color: rgb(138, 138, 138);
+    width: 28px;
+    height: 3px;
+    margin-bottom: 4px;
+  }
+}
+
+// -----------------------------------------timetable -----------------------------------------------
+
+.p_course {
+  color: #c0c0c0;
+  font-size: 14px;
+  padding-bottom: 15px;
+  font-family: GothamPro;
+  font-weight: 600;
+  letter-spacing: 2.8px;
+}
+.timetable__name {
+  margin: 90px 60px;
+  margin-bottom: 190px;
+  font-size: 30px;
+}
+.timetable__block {
+}
+
+.day__block {
+  margin: auto;
+  margin-top: 85px;
+  background-color: rgb(255, 255, 255);
+
+  h3 {
+    margin: 20px 20px;
+  }
+}
+
+.time__block {
+  img {
+    width: 14px;
+    height: 14px;
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 10px;
+  }
+}
+
+.time__block__main {
+  margin-top: 16px;
+}
+
+.time__info {
+  padding: 30px;
+  border: 1px solid #80808038;
+  margin-top: 50px;
+  opacity: 0;
+}
+
+.op1 {
+  opacity: 1 !important;
+  transition: 1s ease-in;
+}
+
+.time__question {
+  font-size: 19px;
+  font-family: GothamProBold;
+  color: #b1b1b1;
+  border: 3px solid #adadad;
+  padding: 0px 8px 4px 8px;
+  border-radius: 29px;
+  margin-top: 120px;
+  width: 32px;
+  height: 32px;
+  margin-left: 20px;
+  &:hover {
+    color: #e94a4a;
+    border: 3px solid #e94a4a;
+    cursor: pointer;
+  }
+}
+
+.timetable__row {
+  background-color: #f8f8f8;
+  padding-bottom: 50px;
+}
+
+// --------------------------------------------categories-----------------------------
+
+.categories {
+  &__img {
+    width: 130px;
+    height: 120px;
+    background-color: #f9e847;
+    &:hover {
+      background-color: #f9f9f9;
+      transition: 0.1s ease-in;
+    }
+    img {
+      padding: 25px 0px 0px 40px;
+    }
+  }
+  &__name {
+    margin-left: 75px;
+    margin-top: 55px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    width: 414px;
+    margin: 20px 0px 0px 0px;
+    font-size: 14px;
+  }
+  &__bg {
+    background-color: #f9f9f9 !important;
+  }
+}
+.card-header {
+  margin-left: -36px !important;
+  margin-right: -15px !important;
+  padding: 0 !important;
+  background-color: white !important;
+  margin-bottom: 20px !important;
+  border: none !important;
+}
+
+.btn-link {
+  color: #000000 !important;
+  &:hover {
+    text-decoration: none !important;
+  }
+  margin-top: 30px;
+}
+
+.inCategories {
+  margin-left: 50px;
+  &__name {
+    font-size: 15px;
+    letter-spacing: 2.25;
+  }
+  &__text {
+    font-size: 14px;
+  }
+}
+
+.arrow__more {
+  width: 18px;
+  height: 12px;
+  margin-left: 15px;
+}
+
+.categories__name__4 {
+  width: 240px;
+}
+
+// --------------------------------------tabelhours--------------------------------
+
+.tablehours {
+  &__container {
+    background-color: #ffffff;
+    margin-top: 120px;
+    padding: 120px 50px;
+    margin-bottom: 120px;
+  }
+  &__text {
+    text-align: right;
+  }
+  &__bg__grey {
+    background-color: #f8f8f8;
+  }
+
+  &__bg__yellow {
+  }
+  &__days {
+    padding: 9px 50px;
+    &:hover {
+      background-color: #f9e847;
+    }
+    &:hover.yellow__day {
+      background-color: #f9e847;
+    }
+  }
+
+  &__hours {
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.ta-l {
+  text-align: right;
+}
+
+// ----------------------------------formEducation----------------------
+
+.formEducation {
+  position: relative;
+  &__container {
+    padding-top: 200px;
+    padding-bottom: 170px;
+  }
+  &__text {
+    margin-top: 100px;
+    width: 779px;
+    text-align: center;
+  }
+  &__img2 {
+    margin-top: 30px;
+  }
+}
+
+.block__dot {
+  margin-left: 40px;
+  margin-top: 105px;
+}
+
+%side__options {
+  position: absolute;
+  transform: rotate(-90deg);
+  right: -59px;
+  top: 198px;
+}
+
+%side__options2 {
+  width: 50px;
+  height: 4px;
+  background-color: black;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.side__text {
+  @extend %side__options;
+}
+
+.side__text__border {
+  @extend %side__options2;
+}
+
+.side__text2 {
+  @extend %side__options;
+}
+
+.side__text__border2 {
+  @extend %side__options2;
+}
+
+// -----------------------------------------teachers---------------------
+
+.carousel-control-prev {
+  left: 960px !important;
+  top: 270px !important;
+  width: 58px !important;
+}
+
+.carousel-control-next {
+  right: 61px !important;
+  top: 270px !important;
+  width: 48px !important;
+}
+
+.teachers {
+  position: relative;
+  padding: 200px 0;
+  border: 1px solid rgb(231, 231, 231);
+  &__name {
+    font-size: 18px;
+  }
+  &__row {
+    margin-top: 100px;
+  }
+  &__slidenum {
+    margin-top: 10px;
+  }
+  &__slidenum1 {
+    margin-right: 10px;
+  }
+  &__shapebg {
+    background-color: #f9e847;
+    padding: 10px;
+  }
+  &__text {
+    margin-top: 40px;
+  }
+}
+
+// ------------------------------------------------------contacts------------------------
+
+.contacts {
+  padding-bottom: 120px;
+  &__block {
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  &__img {
+    width: 32px;
+    height: 20px;
+    margin-top: 18px;
+    margin-right: 18px;
+  }
+
+  &__main {
+    font-size: 30px;
+  }
+  &__address {
+    margin-bottom: 50px;
+  }
+
+  &__data__text {
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    margin-top: 18px;
+  }
+}
+
+.cont__brd {
+  border-right: 1px solid #f0f0f0;
+}
+
+.img__map {
+  margin-left: 33px;
+  margin-bottom: 30px;
+}
+
+// -------------------------------------signup--------------------------------------
+
+.signup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-left: 40px;
+  margin-top: 200px;
+  &__inp {
+    border: none;
+    border-bottom: 3px solid rgb(224, 224, 224);
+    margin-bottom: 25px;
+  }
+
+  &__format {
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    width: 250px;
+    margin-left: 40px;
+    margin-right: 70px;
+  }
+  &__radio {
+    margin-left: 20px;
+  }
+  &__bt {
+    background-color: #f9e847;
+    padding: 15px 60px;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    font-family: GothamProBold;
+    border: none;
+    outline: none;
+  }
+  &__lock {
+    position: absolute;
+    top: 101px;
+    right: 61px;
+  }
+}
+
+input[type="text"]:focus {
+  border: none;
+  border-bottom: 3px solid rgb(53, 53, 53);
+  outline: none;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  font-family: GothamProBold;
+}
+
+#map {
+  width: 600px;
+  height: 280px;
+  margin-left: 25px;
+}
+
+.menu__hidden2 {
+  //   display: none !important;
+  opacity: 0 !important;
+  height: 0;
+}
+
+.menu__hidden {
+  position: absolute;
+  //   display: block !important;
+  opacity: 1 !important;
+  background-color: #212121;
+  height: 900px;
+  transition: 0.6s ease-in;
+  width: 100%;
+  z-index: 10;
+
+  ul {
+    margin-top: 150px;
+    transition: 1s ease-in;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  li {
+    list-style: none;
+    line-height: 50px;
+  }
+  a {
+    color: rgb(236, 236, 236);
+    &:hover {
+      color: #f9e847;
+      text-decoration: none;
+    }
+  }
+}
+
+// -------------------------------media---------------------------
+@media screen and (max-width: 1246px) {
+  .carousel-control-prev {
+    left: 948px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel-control-prev {
+    left: 769px !important;
+  }
+
+  .tablehours__days {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .categories__name {
+    margin-left: 44px;
+    margin-top: 55px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .signup {
+    width: 400px;
+  }
+
+  .day__block {
+    margin: auto;
+    width: 113%;
+    margin-top: 85px;
+    background-color: white;
+  }
+
+  .timetable__name {
+    margin: 62px 22px;
+    margin-bottom: 79px;
+    font-size: 30px;
+  }
+  .timetable__row {
+    background-color: #f8f8f8;
+    padding-bottom: 50px;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .tablehours__days {
+    padding: 10px 0px;
+  }
+
+  .media__center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-control-prev {
+    left: 531px !important;
+    top: 397px !important;
+  }
+
+  .carousel-control-next {
+    top: 397px !important;
+  }
+
+  .media__none {
+    display: none !important;
+  }
+
+  .media__padding {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .timetable__row {
+    height: 100%;
+  }
+
+  .teachers {
+    padding-top: 30px;
+  }
+
+  .main__block {
+    margin-top: 40px;
+  }
+  .day__block {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .timetable__name {
+    margin: 13px 22px;
+    margin-bottom: 21px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .m_b_202 {
+    margin-bottom: -10px;
+  }
+
+  .menu {
+    top: 24px;
+    right: 15px;
+  }
+
+  .menu__hidden ul {
+    padding-left: 0;
+    transition: 0.5s ease-in;
+  }
+
+  .media__none2 {
+    display: none !important;
+  }
+
+  .main__block p {
+    width: 100%;
+  }
+
+  .categories__name {
+    margin-left: 0px;
+    margin-top: 36px;
+    font-size: 14px;
+  }
+
+  .media__center3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .media__column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block__dot {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .img__dot {
+    width: 8px;
+    height: 8px;
+    margin-bottom: 10px;
+  }
+  .signup__format {
+    font-size: 11px;
+    margin-left: 35px;
+  }
+
+  .media__center__dot {
+    margin: 20px 0 20px 20px !important;
+  }
+
+  .carousel-control-prev {
+    left: 345px !important;
+    top: 397px !important;
+  }
+
+  .tablehours__days {
+    padding: 10px 0px;
+  }
+
+  .main__ifo__block {
+    margin-top: 63px;
+  }
+
+  .media__none2 {
+    display: none !important;
+  }
+
+  .media__center2 {
+    margin: 0 auto !important;
+  }
+
+  .formEducation__container {
+    padding-top: 71px;
+  }
+
+  .contacts__data {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .formEducation__container {
+    padding-top: 200px;
+    padding-bottom: 27px;
+  }
+
+  .formEducation__img2,
+  .formEducation__img1 {
+    width: 50%;
+  }
+
+  .contacts__block {
+    margin-top: 55px;
+    margin-bottom: 0px;
+  }
+
+  .teachers {
+    padding-bottom: 55px;
+  }
+
+  .carousel-control-prev {
+    left: 235px !important;
+    top: 533px !important;
+  }
+
+  .signup {
+    width: 320px;
+    &__format {
+      margin-right: 0;
+    }
+
+    margin-top: 122px;
+  }
+
+  .contacts__address {
+    margin-bottom: 0px;
+  }
+
+  .media__center3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .media__column {
+    display: flex;
+    flex-direction: column;
+  }
+  .formEducation__container {
+    padding-top: 50px;
+    padding-bottom: 27px;
+  }
+
+  .img__dot {
+    width: 8px;
+    height: 8px;
+    margin-bottom: 10px;
+  }
+
+  .media__center__dot {
+    margin: 20px 0 20px 20px !important;
+  }
+
+  .media__none3 {
+    display: none !important;
+  }
+
+  .carousel-control-next {
+    top: 533px !important;
+  }
+
+  .tablehours__hours {
+    text-align: center !important;
+  }
+
+  .tablehours__days {
+    text-align: center;
+  }
+  .media__fz {
+    font-size: 10px;
+  }
+
+  .media__padding10 {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .carousel-control-prev {
+    left: 190px !important;
+    top: 533px !important;
+  }
+  .carousel-control-next {
+    top: 533px !important;
+  }
+
+  .media__fz {
+    font-size: 12px !important;
+  }
+
+  .main__ifo__block {
+    width: 63%;
+  }
+
+  .signup {
+    width: 74%;
+  }
+  .formEducation__container {
+    padding-top: 50px;
+    padding-bottom: 27px;
+  }
+
+  .categories__name {
+    margin-left: 0px;
+    margin-top: 36px;
+    font-size: 12px;
+  }
+
+  .media__none4 {
+    display: none !important;
+  }
+
+  .side__text,
+  .side__text2 {
+    opacity: 0;
+  }
+
+  .contacts__block {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contacts__data {
+    text-align: center;
+    width: 67%;
+  }
+
+  .main__block {
+    margin-left: 52px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .carousel-control-prev {
+    left: 125px !important;
+    top: 533px !important;
+  }
+  .categories__img {
+    width: 91px;
+    height: 105px;
+    background-color: #f9e847;
+  }
+  .categories__img img {
+    width: 86%;
+    padding: 29px 0px 0px 38px;
+  }
+
+  .signup__format {
+    font-size: 13px;
+    margin-left: 3px;
+  }
+
+  .categories__name {
+    margin-left: 0px;
+    margin-top: 36px;
+    font-size: 11px;
+  }
+
+  .media__fz {
+    font-size: 11px !important;
+  }
+
+  .main__ifo__block img {
+    margin-right: 40px;
+  }
+
+  .main__block {
+    margin-left: 35px;
+  }
+}
