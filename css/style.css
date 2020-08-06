@@ -686,9 +686,22 @@ label {
   }
 }
 @media screen and (max-width: 540px) {
+  .side__text,
+  .side__text2 {
+    opacity: 0;
+  }
+
   .formEducation__container {
     padding-top: 200px;
     padding-bottom: 27px;
+  }
+
+  .side__text,
+  .side__text2 {
+    position: absolute;
+    transform: rotate(-90deg);
+    right: 0px;
+    top: 198px;
   }
 
   .formEducation__img2,
