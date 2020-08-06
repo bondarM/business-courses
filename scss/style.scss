@@ -834,6 +834,14 @@ label {
     left: 209px !important;
     top: 533px !important;
   }
+  .media__fz {
+    font-size: 12px !important;
+  }
+  .categories__name {
+    margin-left: 0px;
+    margin-top: 36px;
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -895,6 +903,14 @@ label {
   .carousel-control-prev {
     left: 169px !important;
     top: 533px !important;
+  }
+  .media__fz {
+    font-size: 12px !important;
+  }
+  .categories__name {
+    margin-left: 0px;
+    margin-top: 36px;
+    font-size: 12px;
   }
 }
 
